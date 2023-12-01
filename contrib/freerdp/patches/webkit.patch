@@ -1,0 +1,11 @@
+--- a/client/SDL/aad/CMakeLists.txt	2023-11-29 02:17:28.263043827 -0300
++++ b/client/SDL/aad/CMakeLists.txt	2023-11-29 02:17:39.622095196 -0300
+@@ -39,7 +39,7 @@
+       )
+     else()
+       find_package(PkgConfig REQUIRED)
+-      pkg_check_modules(WEBVIEW_GTK webkit2gtk-4.0 REQUIRED)
++      pkg_check_modules(WEBVIEW_GTK webkit2gtk-4.1 REQUIRED)
+       include_directories(${WEBVIEW_GTK_INCLUDE_DIRS})
+       list(APPEND LIBS
+         ${WEBVIEW_GTK_LIBRARIES}
